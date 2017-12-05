@@ -47,4 +47,11 @@ public class SommaNumeri {
         assertThat(result, is(0));
     }
 
+    @Test
+    public void parseAlphanumeric(){
+        Calculator calculator = new Calculator();
+        int result = calculator.parse("a,AbC");
+        assertThat(result, is(124));
+    }
+
 }
